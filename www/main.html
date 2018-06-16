@@ -12,7 +12,13 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/font-awesome.css">
   <!-- Link Swiper's CSS -->
- 
+ <style type="text/css">
+     body{
+
+          background:url(../images/back1.png) repeat;
+    background-size: cover;
+     }
+ </style>
   
     </head>
     <body>
@@ -23,18 +29,23 @@
 
 <div class="wrapper text-center">
 
-    <div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary" ng-click="home()"><i class="fa fa-home"></i></button>
+    <div class="btn-group btn-lg" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary" ng-click="home()"><i class="fa fa-2x fa-home"></i></button>
   <button type="button" class="btn btn-secondary" ng-click="VisitSite()">Visit Site</button>
-  <button type="button" class="btn btn-danger" ng-click="Logout()"><i class="fa fa-lock"></i></button>
+  <button type="button" class="btn btn-danger" ng-click="Logout()"><i class="fa fa-2x fa-lock"></i></button>
 </div>
 <br><br><br>
 <div class="btn-group-vertical btn-block" data-toggle="buttons">
-  <a type="button" class="btn btn-primary btn-block" ng-click="LoadView('home')" >Add Details</a>
-  <a type="button" class="btn btn-primary btn-block">View Login Details</a>
-  <a type="button" class="btn btn-primary btn-block">View Link Details</a>
-  <a type="button" class="btn btn-primary btn-block">View Panel Details</a>
-  <a type="button" class="btn btn-primary btn-block">Change Password</a>
+  <a type="button" class="btn btn-primary btn-block" ng-click="LoadView('home')" >
+    <i class="fa fa-plus"></i><br> Add Details</a>
+  <a type="button" class="btn btn-primary btn-block">
+   <i class="fa fa-eye"></i><br> View Login Details</a>
+  <a type="button" class="btn btn-primary btn-block"><i class="fa fa-eye"></i><br>
+  View Link Details</a>
+  <a type="button" class="btn btn-primary btn-block">
+    <i class="fa fa-eye"></i><br> View Panel Details</a>
+  <a type="button" class="btn btn-primary btn-block">
+   <i class="fa fa-key"></i><br> Change Password</a>
 </div>
 
   
@@ -53,7 +64,9 @@
 <script>
     var app = angular.module('myApp', []);
     app.controller('HomeCtrl', function ($scope, $http) {
+
 $(".btn-block").css("margin-top","15px");
+$(".btn-block").css("font-size","15px");
 $(".btn-block").css("color","white");
  if(localStorage.getItem("Ip") == null)
  {

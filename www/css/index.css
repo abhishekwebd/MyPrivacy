@@ -35,7 +35,7 @@ body {
         color-stop(0, #A7A7A7),
         color-stop(0.51, #E4E4E4)
     );
-    background:url(../images/back1.png) no-repeat;
+    background:url(../images/back1.png) repeat;
     background-size: cover;
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
