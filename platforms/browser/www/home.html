@@ -159,6 +159,36 @@
 
       </div>
 
+      <div class="swiper-slide" style="padding-right: 20px;padding-left: 20px;">
+         <!--  <div ng-include="'addLink.html'"></div> -->
+
+<form>
+  <fieldset style="color: white;">
+    <legend>Add Other Details</legend>
+    <div class="form-group row">
+     
+    
+        <input type="text" class="form-control-plaintext" id="otherTitle" placeholder="Title" style="color: white;">
+  
+    </div>
+    <div class="form-group">
+  
+   <textarea rows="3" class="form-control" name="editor4" id="otherContent" style="color: white;">
+     
+   </textarea>
+   <script>
+      CKEDITOR.replace( 'editor4' );
+    </script>
+    </div>
+     <div class="form-group">
+        <button type="button" id="btnOtherSave" class="btn btn-primary">Save</button>
+     </div>
+  </fieldset>
+</form>
+
+
+      </div>
+
     </div>
     <!-- Add Scrollbar -->
     <div class="swiper-scrollbar"></div>
